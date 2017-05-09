@@ -1,0 +1,19 @@
+#wrapperHome {
+	WIDTH: 100%; BACKGROUND: url(../images/Home_bg.gif) repeat-x 50% top; FLOAT: left
+}
+#main {
+	POSITION: relative; WIDTH: 880px; BACKGROUND: url(../images/banner.jpg) no-repeat 50% top; FLOAT: left; MARGIN-LEFT: -440px; LEFT: 50%
+}
+#banner {
+	WIDTH: 100%; FLOAT: left; HEIGHT: 310px
+}
+#middlePlan {
+	WIDTH: 100%; FLOAT: left; HEIGHT: 520px 
+}
+BODY {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT: 12px/20px Tahoma, Arial, "Î¢ÈíÑÅºÚ", "ºÚÌå", "ËÎÌå"; COLOR: #555; PADDING-TOP: 0px
+}
+
+#footer {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 16px; LINE-HEIGHT: 20px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: url(../images/footer_bg.gif) #eee repeat-x center top; FLOAT: left; PADDING-TOP: 30px
+}
