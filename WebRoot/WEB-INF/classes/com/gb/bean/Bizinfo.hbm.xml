@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.gb.bean.Bizinfo" table="bizinfo">
+		<id name="id" type="java.lang.Integer" column="id" length="4">
+			<generator class="identity"></generator>
+		</id>
+		<property name="ECID" type="string" column="ECID" length="255">
+		</property>
+		<property name="OprCode" type="string" column="OprCode"
+			length="255">
+		</property>
+		<property name="OprSeq" type="string" column="OprSeq" length="255">
+		</property>
+		<property name="OrdID" type="string" column="OrdID" length="255">
+		</property>
+		<property name="BizName" type="string" column="BizName"
+			length="255">
+		</property>
+		<property name="BizType" type="string" column="BizType"
+			length="255">
+		</property>
+		<property name="OrgProvID" type="string" column="OrgProvID"
+			length="255">
+		</property>
+
+		<property name="HomeCity" type="string" column="HomeCity"
+			length="255">
+		</property>
+
+		<property name="SubBizType" type="string" column="SubBizType"
+			length="255">
+		</property>
+
+		<property name="BizStatus" type="string" column="BizStatus"
+			length="255">
+		</property>
+
+		<property name="PayType" type="string" column="PayType"
+			length="255">
+		</property>
+
+		<property name="ProdOrdMod" type="string" column="ProdOrdMod"
+			length="255">
+		</property>
+
+		<property name="OprEffTime" type="string" column="OprEffTime"
+			length="255">
+		</property>
+		<property name="NetType" type="string" column="NetType"
+			length="255">
+		</property>
+		<property name="UsageDesc" type="string" column="UsageDesc"
+			length="255">
+		</property>
+		<property name="IntroURL" type="string" column="IntroURL"
+			length="255">
+		</property>
+		<property name="AdminAcct" type="string" column="AdminAcct"
+			length="255">
+		</property>
+		<property name="AdminPasswd" type="string" column="AdminPasswd"
+			length="255">
+		</property>
+		<property name="AdminMSISDN" type="string" column="AdminMSISDN"
+			length="255">
+		</property>
+		<property name="LocPlatformType" type="string" column="LocPlatformType"
+			length="255">
+		</property>
+
+		<property name="tjtime" type="string" column="tjtime" length="100">
+		</property>
+
+	</class>
+</hibernate-mapping>

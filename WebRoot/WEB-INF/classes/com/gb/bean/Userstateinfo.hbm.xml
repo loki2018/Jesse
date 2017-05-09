@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.gb.bean.Userstateinfo" table="userstateinfo">
+		<id name="id" type="java.lang.Integer" column="id" length="4">
+			<generator class="identity"></generator>
+		</id>
+		<property name="OrdID" type="string" column="OrdID" length="255">
+		</property>
+		<property name="MSISDN" type="string" column="MSISDN" length="255">
+		</property>
+		<property name="Approbate" type="string" column="Approbate"
+			length="255">
+		</property>
+
+		<property name="OprT" type="string" column="OprT" length="255">
+		</property>
+
+		<property name="OprSeq" type="string" column="OprSeq" length="255">
+		</property>
+
+		<property name="tjtime" type="string" column="tjtime" length="100">
+		</property>
+
+	</class>
+</hibernate-mapping>

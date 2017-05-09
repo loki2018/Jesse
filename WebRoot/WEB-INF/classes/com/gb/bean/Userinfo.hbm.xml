@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.gb.bean.Userinfo" table="userinfo">
+		<id name="id" type="java.lang.Integer" column="id" length="8">
+			<generator class="identity"></generator>
+		</id>
+		<property name="ECID" type="string" column="ECID" length="255">
+		</property>
+		<property name="OrdID" type="string" column="OrdID" length="255">
+		</property>
+		<property name="ProdName" type="string" column="ProdName"
+			length="255">
+		</property>
+		<property name="OprSeq" type="string" column="OprSeq" length="100">
+		</property>
+		<property name="MSISDN" type="string" column="MSISDN" length="255">
+		</property>
+		<property name="OprCode" type="string" column="OprCode"
+			length="255">
+		</property>
+		<property name="PayECID" type="string" column="PayECID"
+			length="255">
+		</property>
+		<property name="EfftT" type="string" column="EfftT" length="255">
+		</property>
+
+		<property name="OprT" type="string" column="OprT" length="255">
+		</property>
+
+		<property name="LocType" type="string" column="LocType"
+			length="255">
+		</property>
+
+		<property name="UEType" type="string" column="UEType" length="255">
+		</property>
+
+		<property name="UEID" type="string" column="UEID" length="255">
+		</property>
+
+		<property name="UEModel" type="string" column="UEModel"
+			length="255">
+		</property>
+
+		<property name="AutoNum" type="string" column="AutoNum"
+			length="255">
+		</property>
+
+		<property name="tjtime" type="string" column="tjtime" length="100">
+		</property>
+
+	</class>
+</hibernate-mapping>
