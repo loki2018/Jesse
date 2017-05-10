@@ -30,9 +30,7 @@ public class UserstateinfoServiceImpl implements UserstateinfoService {
 		userstateinfoDao.updateUserstateinfo(oaDepartment);
 	}
 	
-	public List<Userstateinfo> findBizinfoByPhone(String phone) {
-		return userstateinfoDao.findBizinfoByPhone(phone);
-	}
+ 
 
 	public UserstateinfoDAO getUserstateinfoDao() {
 		return userstateinfoDao;

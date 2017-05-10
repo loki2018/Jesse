@@ -12,7 +12,8 @@ public class Conn{
 	//获取数据库的连接
 	private static String user="root";
     //private static String password="123456";
-	private static String password="asdfdc";
+    private static String password="asdfdc";
+	//private static String password="hn@sqjz123";
 	
 	public static synchronized Connection getConn() throws Exception{
 	    try{

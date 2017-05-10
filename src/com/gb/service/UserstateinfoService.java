@@ -17,5 +17,5 @@ public interface UserstateinfoService {
 
 	public void updateUserstateinfo(Userstateinfo userstateinfo);
 	
-	public List<Userstateinfo> findBizinfoByPhone(String phone);
+ 
 }

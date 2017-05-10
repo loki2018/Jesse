@@ -8,7 +8,6 @@ import org.hibernate.Session;
 import org.springframework.orm.hibernate4.HibernateCallback;
 import org.springframework.orm.hibernate4.support.HibernateDaoSupport;
 
-import com.gb.bean.Ecinfo;
 import com.gb.bean.Userinfo;
 import com.gb.dao.UserinfoDAO;
 
@@ -24,10 +23,6 @@ public class UserinfoDAOImpl extends HibernateDaoSupport implements UserinfoDAO 
 		return (List<Userinfo>) this.getHibernateTemplate().find(hql);
 	}
 	
-	public List<Ecinfo> findAllEcinfos() {
-		String hql = "from Ecinfo ecinfo";
-		return (List<Ecinfo>) this.getHibernateTemplate().find(hql);
-	}
 	
 	public List<Userinfo> findAllUserinfosByEcid(String ecid) {
 		String hql = "from Userinfo  where ecid='"+ecid+"'";
@@ -40,10 +35,7 @@ public class UserinfoDAOImpl extends HibernateDaoSupport implements UserinfoDAO 
 		return (List<Userinfo>) this.getHibernateTemplate().find(hql);
 	}
 
-	public List<Ecinfo> findEcinfoByEcname() {
-		String hql = "from Ecinfo ecinfo";
-		return (List<Ecinfo>) this.getHibernateTemplate().find(hql);
-	}
+
 	public Userinfo findUserinfoById(String id) {
 		Userinfo userinfo = (Userinfo) this.getHibernateTemplate().get(
 				Userinfo.class, id);
@@ -66,14 +58,7 @@ public class UserinfoDAOImpl extends HibernateDaoSupport implements UserinfoDAO 
 		// TODO Auto-generated method stub
 		this.getHibernateTemplate().save(userinfo);
 	}
-	
-	public List<Userinfo> findBizinfoByEcidAndOrdidAndPhone(String ecid,
-			String ordid, String phone) {
-		String hql = "from Userinfo userinfo where userinfo.ECID='" + ecid
-				+ "' and  userinfo.OrdID='" + ordid + "' and userinfo.MSISDN='"
-				+ phone + "'";
-		return (List<Userinfo>) this.getHibernateTemplate().find(hql);
-	}
+ 
 	
 	public List queryForPage(final String hql,final int offset,final int length){
 		

@@ -2,7 +2,6 @@ package com.gb.service;
 
 import java.util.List;
 
-import com.gb.bean.Ecinfo;
 import com.gb.bean.PageBean;
 import com.gb.bean.Userinfo;
 
@@ -18,12 +17,10 @@ public interface UserinfoService {
 	public List<Userinfo> findAllUserinfos();   
 	
 	public List<Userinfo> findUserinfosByOk();
-	public List<Ecinfo> findEcinfoByEcname(); 
 	
 	public void updateUserinfo(Userinfo userinfo);
 	
-	public List<Userinfo> findBizinfoByEcidAndOrdidAndPhone(String ecid,String ordid,String phone);
-	
+ 
 	/**
      * 分页查询
      * @param currentPage 当前第几页

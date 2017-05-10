@@ -2,7 +2,6 @@ package com.gb.service.impl;
 
 import java.util.List;
 
-import com.gb.bean.Ecinfo;
 import com.gb.bean.PageBean;
 import com.gb.bean.Userinfo;
 import com.gb.dao.UserinfoDAO;
@@ -27,11 +26,7 @@ public class UserinfoServiceImpl implements UserinfoService {
 		// TODO Auto-generated method stub
 		return  userinfoDao.findAllUserinfosByOrdid(ordid);
 	}
-	
-	public List<Ecinfo> findEcinfoByEcname() {
-		// TODO Auto-generated method stub
-		return	userinfoDao.findEcinfoByEcname();
-	}
+
 	
 	public Userinfo findUserinfoById(String id) {
 		return userinfoDao.findUserinfoById(id);
@@ -49,10 +44,7 @@ public class UserinfoServiceImpl implements UserinfoService {
 		userinfoDao.updateUserinfo(oaDepartment);
 	}
 	
-	public List<Userinfo> findBizinfoByEcidAndOrdidAndPhone(String ecid,
-			String ordid, String phone) {
-		return userinfoDao.findBizinfoByEcidAndOrdidAndPhone(ecid, ordid, phone);
-	}
+ 
 
 	public UserinfoDAO getUserinfoDao() {
 		return userinfoDao;

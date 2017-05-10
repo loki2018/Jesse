@@ -2,7 +2,6 @@ package com.gb.dao;
 
 import java.util.List;
 
-import com.gb.bean.Ecinfo;
 import com.gb.bean.Userinfo;
 
 public interface UserinfoDAO {
@@ -16,17 +15,15 @@ public interface UserinfoDAO {
 	
 	public void AddUserinfo(Userinfo userinfo);
 	
-	public List<Ecinfo> findAllEcinfos();
+
 	
 	public List<Userinfo> findAllUserinfosByEcid(String ecid);
 	public List<Userinfo> findAllUserinfosByOrdid(String ecid);
 	
-	public List<Ecinfo> findEcinfoByEcname(); 
 
 	public void updateUserinfo(Userinfo userinfo);
 	
-	public List<Userinfo> findBizinfoByEcidAndOrdidAndPhone(String ecid,String ordid,String phone);
-	
+ 
 	/**
      * 分页查询
      */

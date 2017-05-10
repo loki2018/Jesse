@@ -16,7 +16,6 @@ import org.apache.struts2.ServletActionContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.gb.bean.Ecinfo;
 import com.gb.bean.PageBean;
 import com.gb.bean.Userinfo;
 import com.gb.bean.Userstateinfo;
@@ -31,14 +30,6 @@ public class AdminGbAction extends ActionSupport {
 	private UserinfoService userinfoService;
 	private Userinfo userinfo;
 	private LogService logservice;
-	private List<Ecinfo> listEcinfo;
-	public List<Ecinfo> getListEcinfo() {
-		return listEcinfo;
-	}
-
-	public void setListEcinfo(List<Ecinfo> listEcinfo) {
-		this.listEcinfo = listEcinfo;
-	}
 
 	private List<Userinfo> listUserinfo;
 	
@@ -272,8 +263,8 @@ public class AdminGbAction extends ActionSupport {
 			back="toExl";
 		}
 		else if("1".equals(hid)){
-			listEcinfo=userinfoService.findEcinfoByEcname();
-			back="toExl1";
+			//listEcinfo=userinfoService.findEcinfoByEcname();
+			 
 		}
 		else if("2".equals(hid)){
 			if(ordid!=null||!("".equals(ordid))){

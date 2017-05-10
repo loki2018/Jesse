@@ -33,10 +33,7 @@ public class UserstateinfoDAOImpl extends HibernateDaoSupport implements Usersta
 		this.getHibernateTemplate().update(userstateinfo);
 	}
 
-	public List<Userstateinfo> findBizinfoByPhone(String phone) {
-		String hql = "from Userstateinfo userstateinfo where userstateinfo.MSISDN='"+ phone + "'";
-		return (List<Userstateinfo>) this.getHibernateTemplate().find(hql);
-	}
+ 
 
 	public void AddUserstateinfo(Userstateinfo userstateinfo) {
 		// TODO Auto-generated method stub

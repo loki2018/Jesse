@@ -7,13 +7,13 @@
 		<action name="Gb_*" method="{1}" class="adminGbAction">
 			<result name="loginOk">/userinfo.jsp</result>
 			<result name="userinfoOk">/userinfoOk.jsp</result>
-			<result name="loginOk1">/ecinfo.jsp</result>
+			
 			<result name="login">/index.jsp</result>
 			<result name="message">/message.jsp</result>
-			<result name="backSd">/backSd.jsp</result>
+			
 			<result name="backSd_gb">/gbbackSd.jsp</result>
 			<result name="toExl">/toExl.jsp</result>
-			<result name="toExl1">/toExlecinfo.jsp</result>
+	
 			<result name="adduserinfo">/Adduserinfo.jsp</result>
 		</action>
 	</package>

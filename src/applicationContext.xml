@@ -67,8 +67,7 @@
 		</property>
 		<property name="mappingResources">
 			<list>
-				<value>com/gb/bean/Ecinfo.hbm.xml</value>
-				<value>com/gb/bean/Bizinfo.hbm.xml</value>
+
 				<value>com/gb/bean/Userinfo.hbm.xml</value>
 				<value>com/gb/bean/Userstateinfo.hbm.xml</value>
 				<value>com/gb/bean/Log.hbm.xml</value>
@@ -76,26 +75,7 @@
 		</property>
 	</bean>
 
-	<!-- ecinfo 表service配置 -->
-	<bean id="ecinfoDao" class="com.gb.dao.impl.EcinfoDAOImpl" scope="singleton">
-		<property name="sessionFactory">
-			<ref bean="sessionFactory" />
-		</property>
-	</bean>
-	<bean id="ecinfoService" class="com.gb.service.impl.EcinfoServiceImpl">
-		<property name="ecinfoDao" ref="ecinfoDao"></property>
-	</bean>
 
-	<!-- bizinfo 表service配置 -->
-	<bean id="bizinfoDao" class="com.gb.dao.impl.BizinfoDAOImpl"
-		scope="singleton">
-		<property name="sessionFactory">
-			<ref bean="sessionFactory" />
-		</property>
-	</bean>
-	<bean id="bizinfoService" class="com.gb.service.impl.BizinfoServiceImpl">
-		<property name="bizinfoDao" ref="bizinfoDao"></property>
-	</bean>
 
 	<!-- userinfo 表service配置 -->
 	<bean id="userinfoDao" class="com.gb.dao.impl.UserinfoDAOImpl"
