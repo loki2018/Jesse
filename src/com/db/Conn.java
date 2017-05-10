@@ -6,13 +6,13 @@ public class Conn{
 	private ResultSet rs;
 	private static String drivername="com.mysql.jdbc.Driver";
 	//数据库连接URL
-	private static String urll="jdbc:mysql://192.168.1.88:3306/Jesse_db";
-	//private static String urll="jdbc:mysql://127.0.0.1:3307/gbdatabase";
+	//private static String urll="jdbc:mysql://192.168.1.88:3306/Jesse_db";
+	private static String urll="jdbc:mysql://127.0.0.1:3307/gbdatabase";
 
 	//获取数据库的连接
 	private static String user="root";
-    private static String password="123456";
-	//private static String password="hn@sqjz123";
+    //private static String password="123456";
+	private static String password="asdfdc";
 	
 	public static synchronized Connection getConn() throws Exception{
 	    try{
